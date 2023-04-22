@@ -1,0 +1,40 @@
+html{
+    height:100%;
+}
+body{
+    min-height:100%;
+    background: #FFFFFF;
+background: -moz-radial-gradient(center, #FFFFFF 0%, #F9C8FF 50%, #FFFFFF 100%);
+background: -webkit-radial-gradient(center, #FFFFFF 0%, #F9C8FF 50%, #FFFFFF 100%);
+background: radial-gradient(ellipse at center, #FFFFFF 0%, #F9C8FF 50%, #FFFFFF 100%);
+}
+p {
+    font-family:"gill sans", sans-serif;
+}
+.links {
+    display:flex;
+}
+.socials:hover{
+    border: 3px solid #FF00EC;
+}
+h1.introheader{
+    text-align:center;
+    position:static;
+    text-shadow: 1px 2px 2px #FF00EC;
+}
+.box{
+    float:left;
+    margin-right: 15px;
+    width:200px;
+    height:150px;
+    border-radius: 15px;
+    padding: 3em;
+    position:static;
+}
+::selection{
+    color:#FF00EC;
+}
+.projects{
+    position:relative;
+    text-shadow: 1px 2px 2px #FF00EC;
+}

@@ -3,15 +3,23 @@
     <head>
         <title> Our Funky HTML Page</title>
         <meta name="Giannella Guerrero" content="Our first page">
+        <link rel="stylesheet" href="style.css">
     </head>
 <body> 
-    <h1> Welcome to my HTML page!</h1>
-    <p> My name is Giannella, I'm a Sociology student at UC Santa Cruz </p>
-    <a href = "https://github.com/gguerrero03"> My Github</a>
-    <h2> Projects</h2>
-    <dl>
-        <dt><a href = "https://github.com/gguerrero03"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="github link" height="200" width="300"></a></dt>
-        <dd>Tells you the weather! Made using HTML, CSS, and Javascrpit!</dd>
-    </dl>
+    <h1 class="introheader"> Welcome to my HTML page!</h1>
+    <div class="box">
+        <h2 class="introheader"> My name is Giannella!</h2>
+        <p id="introparagraph"> My name is Giannella, also referred to as GG (she/her). I'm a Sociology student at UC Santa Cruz and I am currently doing research with a program called Pathways 2 Research.</p>
+    </div>
+    <div class="links">
+        <div class="socials"><a href = "https://github.com/gguerrero03"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="github link" height="50" width="50"></a></div>
+        <div class="socials"><a href = "https://www.linkedin.com/in/giannella-guerrero-cardenas-108151203"><img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="linkedin" height="50" width="50"></a></div>
+        <div class="socials"><a href = "https://www.instagram.com/giannellaguerrero/"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="instagram link" height="50" width="50"></a></div>
+    </div>
+    <h2 class="projects">Projects</h2>
+        <ul>
+            <li>Weather App</li>
+            <dd>Tells you the weather using HTML, CSS, & JavaScript.</dd>
+        </ul>
 </body>
 </html>
