@@ -49,7 +49,7 @@
     <script>
 
         let randomNumber = Math.floor(Math.random() * 100) + 1;
-        console.log(randomeNumber);
+        //console.log(randomeNumber);
 
         let guesses = document.querySelector('.guesses');
         let lastResult = document.querySelector('.lastResult');
@@ -90,8 +90,6 @@
             guessField.value = '';
             guessField.focus();
         }
-        guessSubmit.addEventListener('click', checkGuess);
-
         function setGameOver() {
           guessField.disabled = true;
           guessSubmit.disabled = true;
@@ -112,7 +110,7 @@
           guessField.value = '';
           guessField.focus();
         }
-
+        guessSubmit.addEventListener('click', checkGuess);
         
         
 
