@@ -24,10 +24,11 @@ app.get('/rock', (req, res) => {
     console.log(rndInt) //print out the choice of the not (great for troubleshooting)
     if (rndInt === 3){
         res.send("Bot picked Scissors. You Win!!!")
-    }   else if (rndInt === 1)
+    }   else if (rndInt === 1){
             res.send("Bot picked Rock. Tie! Try again!")
-        else if (rndInt === 2)
+    }else if (rndInt === 2){
             res.send("Bot picked Paper. You Lost!!!")
+    }
 });
 
 // IF the user picks paper
@@ -36,10 +37,11 @@ app.get('/paper', (req, res) => {
     console.log(rndInt)
     if (rndInt === 3){
         res.send("Bot picked Scissors. You Lost!!!")
-    }   else if (rndInt === 1)
+    }   else if (rndInt === 1){
             res.send("Bot picked Rock. You Win!!!")
-        else if (rndInt === 2)
+     }else if (rndInt === 2){
             res.send("Bot picked Paper. Tie! Try again!")
+     }
 });
 
 // IF the user picks scissors
