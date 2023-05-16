@@ -1,7 +1,10 @@
 const express = require('express');
 const request = require("request");
+const cors = require('cors');
 
 const app = express();
+
+app.use(cors());
 
 const API_KEY = "194bd439caf668e4388b11c927aa737a"
 
@@ -11,8 +14,9 @@ app.get('/weather/:lat/:lon', (req, res) => {
 
   var lat = req.params.lat;
   var lon = req.params.lon;
+  console.log(lat, lon);
   var url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=imperial`
-  console.log(url);
+
   
 	request(url, (error, response, body)=>{
 		
@@ -69,6 +73,7 @@ app.get('/weather/:lat/:lon', (req, res) => {
               forecast.push(day); 
               todaysDate = (todaysDate + 1) % 7
             }
+            console.log(forecast);
             res.send({forecast});
           });
         
